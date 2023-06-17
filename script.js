@@ -51,9 +51,13 @@ function Desencriptar(desencriptado){
 }
 
 function btncopiar(){
-    
-    const textoCopiado = areaEncriptada.value;
-    
+    let textoCopiado = document.getElementById("copiarArea");
+
+   
+
+
+    navigator.clipboard.writeText(textoCopiado.value);
+
     alert("El texto ha sido copiado");
 
 }
